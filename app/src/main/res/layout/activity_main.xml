@@ -8,17 +8,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:background="#9400d3"
-        android:padding="15dp"
-        android:textSize="20dp"
-        android:textColor="#fff"
-        android:text="Cadastro"
-       />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -66,6 +55,37 @@
         android:padding="5dp"
         android:inputType="textEmailAddress"
         />
+    <CheckBox
+        android:id="@+id/ingressar_listaCb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingressar na lista de emails?" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:text="Sexo"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/masculinoRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginRight="15dp"
+            android:text="Masculino" />
+        <RadioButton
+            android:id="@+id/femininoRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feminino" />
+    </RadioGroup>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,11 +102,27 @@
         android:padding="5dp"
         android:inputType="text"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:text="UF"
+        />
+    <Spinner
+        android:id="@+id/estadoSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/estados"/>
+
 
     <Button
         android:id="@+id/salvarBt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Salvar" />
 
 
