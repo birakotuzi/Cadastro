@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="1"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -117,13 +118,28 @@
         android:layout_height="wrap_content"
         android:entries="@array/estados"/>
 
-
-    <Button
-        android:id="@+id/salvarBt"
+    <LinearLayout
+        android:layout_below="@+id/group_login"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Salvar" />
+        >
+        <Button
+            android:id="@+id/limparBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Limpar" />
 
-
+        <Button
+            android:id="@+id/salvarBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Salvar" />
+    </LinearLayout>
 </LinearLayout>
